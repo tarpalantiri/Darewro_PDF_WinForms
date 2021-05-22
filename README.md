@@ -5,43 +5,18 @@
 <br>
 <br>
 
+<img align="center" src="https://imgur.com/Oc90CkV">
+
 # Download
-* Check the release page here: [Release Page](https://github.com/tarpalantiri/Darewro_PDF/releases/tag/v0.5) for periodic updates.
-* Or [Click this](https://github.com/tarpalantiri/Darewro_PDF/releases/download/v0.5/Darewro.exe) to start downloading directly.
+* Check the release page here: [Release Page](https://github.com/tarpalantiri/Darewro_PDF_WinForms/releases) for periodic updates.
+* Or [Click this](https://github.com/tarpalantiri/Darewro_PDF_WinForms/releases/download/v2021.1.0/Darewro_PDF.exe) to start downloading directly.
 
 # Installation
-There is no setup just copy `Darewro.exe` to your desired directory
+There is no setup just copy `Darewro_PDF.exe` to your desired directory, and Create a desktop shortcut.
 
 # Usage
-* Create a folder and put
-all your images in there.
-* Copy `Darewro.exe` to that folder.
-* Double click `Darewro.exe`
-* Terminal/commandline window will open, follow the on screen
-instructions.
-* If you said `yes` to the `Have you made a front page`?
-    * You should have a PDF made with your First Page info
-    * The program will join `images.pdf` and `front page.pdf` into `final.pdf`
-* If you said no
-  * All your images will be merged into a single `images.pdf`
-* Chalo mazay karo...
+* Select the folder where the images are placed
+* Select the folder where you want the pdf to end up
+* Optionally select a name for the output pdf
+* Press `Convert`
 
-## FAQ
-## I want to use this as a script coz im HACKERMANS
-
-* You need two packages to run this script
-* Pillow, used for `PIL` package.
-* PyMuPdf, for merging multiple pdfs with the `fitz` package.
-
-```
-pip install pillow fitz wheel
-```
-
-* Then just copy the script to your iamges folder and
-```
-python main.py
-```
-
-## I ran the program, but i dont see any pdf?
-* If there was any problem, the program creates a check `logs.txt` file.
-* Whatsapp me the contents of that file.
