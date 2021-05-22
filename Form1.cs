@@ -44,7 +44,14 @@ namespace Darewro_PDF {
         }
 
         private void ConvertButton_Click(object sender, EventArgs e) {
-            WritePdf();
+            if (InputTextBox.Text == @"C:\") {
+                MessageBox.Show("Please choose an images folder...",
+                    ":(",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+            } else {
+                WritePdf();
+            }
         }
 
         private void PdfNameTextBox_DoubleClick(object sender, EventArgs e) {
