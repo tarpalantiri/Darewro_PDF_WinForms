@@ -5,7 +5,11 @@
 <br>
 <br>
 
-<img align="center" src="./sample.PNG">
+<p align="center"
+
+![](sample.PNG)
+
+>
 
 # Download
 * Check the release page here: [Release Page](https://github.com/tarpalantiri/Darewro_PDF_WinForms/releases) for periodic updates.
