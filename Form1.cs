@@ -90,11 +90,17 @@ namespace Darewro_PDF {
                 //TODO: Log any errors
             } finally {
                 mainDoc.Close();
+                MessageBox.Show($"{PdfNameTextBox.Text}.pdf Generated",
+                    "Done",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
             }
         }
 
         public void ReloadImageList() {
             ImagesListBox.Items.Clear();
+            ImagesFilesList.Clear();
             inputFolder = new DirectoryInfo(InputTextBox.Text);
             foreach (var file in inputFolder.GetFiles("*.jp*")) {
                 if (file.Name != selectedImage) { 

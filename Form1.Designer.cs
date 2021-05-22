@@ -171,9 +171,12 @@ namespace Darewro_PDF {
             this.Controls.Add(this.OutputTextBox);
             this.Controls.Add(this.InputFolderBrowseButton);
             this.Controls.Add(this.InputTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Darewro PDF By Tehseen Sajjad";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
