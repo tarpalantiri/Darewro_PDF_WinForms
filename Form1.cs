@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -15,8 +8,9 @@ using iTextSharp.text.pdf;
 namespace Darewro_PDF {
     public partial class Form1 : Form {
         
-        public static DirectoryInfo inputFolder;
-        public static List<string> ImagesFilesList;
+        public DirectoryInfo inputFolder;
+        public List<string> ImagesFilesList;
+        public string selectedImage = "0x8";
 
         public Form1() {
             InitializeComponent();
@@ -103,9 +97,12 @@ namespace Darewro_PDF {
             ImagesListBox.Items.Clear();
             inputFolder = new DirectoryInfo(InputTextBox.Text);
             foreach (var file in inputFolder.GetFiles("*.jp*")) {
-                ImagesFilesList.Add(file.FullName);
-                ImagesListBox.Items.Add($"{file.Name}");
+                if (file.Name != selectedImage) { 
+                    ImagesFilesList.Add(file.FullName);
+                    ImagesListBox.Items.Add($"{file.Name}");
+                }
             }
         }
+
     }
 }

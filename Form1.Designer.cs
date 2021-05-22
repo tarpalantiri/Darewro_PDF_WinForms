@@ -79,9 +79,9 @@ namespace Darewro_PDF {
             // 
             // ConvertButton
             // 
-            this.ConvertButton.Location = new System.Drawing.Point(234, 209);
+            this.ConvertButton.Location = new System.Drawing.Point(234, 230);
             this.ConvertButton.Name = "ConvertButton";
-            this.ConvertButton.Size = new System.Drawing.Size(114, 61);
+            this.ConvertButton.Size = new System.Drawing.Size(114, 58);
             this.ConvertButton.TabIndex = 5;
             this.ConvertButton.Text = "Convert";
             this.ConvertButton.UseVisualStyleBackColor = true;
@@ -128,9 +128,9 @@ namespace Darewro_PDF {
             // 
             // ReloadButton
             // 
-            this.ReloadButton.Location = new System.Drawing.Point(235, 308);
+            this.ReloadButton.Location = new System.Drawing.Point(234, 294);
             this.ReloadButton.Name = "ReloadButton";
-            this.ReloadButton.Size = new System.Drawing.Size(113, 61);
+            this.ReloadButton.Size = new System.Drawing.Size(113, 58);
             this.ReloadButton.TabIndex = 10;
             this.ReloadButton.Text = "Reload";
             this.ReloadButton.UseVisualStyleBackColor = true;
